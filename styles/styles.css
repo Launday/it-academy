@@ -181,9 +181,9 @@
 
 .card-event__link{
     text-decoration: none;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    /* height: 100%; */
 }
 .card-event__link:hover .card-event__title{
     color: #A51505;
@@ -245,4 +245,30 @@
     line-height: normal;
 
 }
+
+.event {
+    padding: 40px 0 150px;
+  }
+.reserve {
+    display: grid;
+    gap: 65px 11%;
+    grid-template-columns: 405px calc(89% - 405px);
+    grid-template-areas: 
+      "checks scheme"
+      "order legend"; 
+    width: 100%;
+  }
+.reserve__checks {
+    grid-area: checks;
+  }
+.reserve__order {
+    grid-area: order;
+  }
+.reserve__scheme {
+    grid-area: scheme;
+  }
+.reserve__scheme {
+    grid-area: scheme;
+  }
+
 .footer{}
